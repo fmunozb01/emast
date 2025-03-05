@@ -1,0 +1,28 @@
+projection implementation in class ZBP_C_FMBFLIGHT unique;
+strict ( 2 );
+use draft;
+define behavior for ZC_FMBFLIGHT alias Flight
+use etag
+
+{
+  //use create;
+  use update;
+  //use delete;
+  field ( readonly )
+  Carrid,
+  Connid,
+  FlightDate,
+  AirportFrom,
+  CityFrom,
+  CountryFrom,
+  AirportTo,
+  CityTo,
+  CountryTo,
+  PlaneTypeId;
+
+  use action Edit;
+  use action Activate;
+  use action Discard;
+  use action Resume;
+  use action Prepare;
+}
