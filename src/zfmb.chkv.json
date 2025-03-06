@@ -1,0 +1,419 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Variante para FMB",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "selectedChecks": [
+    {
+      "checkName": "SLIN_MAIN",
+      "parameters": [
+        {
+          "name": "StandardOrCustom",
+          "value": "2"
+        },
+        {
+          "name": "SubroutineInterfaces",
+          "value": "true"
+        },
+        {
+          "name": "FunctionInterfaces",
+          "value": "true"
+        },
+        {
+          "name": "ExternalProgramInterfaces",
+          "value": "true"
+        },
+        {
+          "name": "LoadSizes",
+          "value": "true"
+        },
+        {
+          "name": "Authorizations",
+          "value": "true"
+        },
+        {
+          "name": "GuiStatus",
+          "value": "true"
+        },
+        {
+          "name": "SetGetParameters",
+          "value": "true"
+        },
+        {
+          "name": "MessageStatements",
+          "value": "true"
+        },
+        {
+          "name": "Strings",
+          "value": "true"
+        },
+        {
+          "name": "CurrencyFields",
+          "value": "true"
+        },
+        {
+          "name": "FieldAttributes",
+          "value": "true"
+        },
+        {
+          "name": "SyntaxCheckWarnings",
+          "value": "true"
+        },
+        {
+          "name": "Internationalization",
+          "value": "true"
+        },
+        {
+          "name": "SuperfluousStatements",
+          "value": "true"
+        },
+        {
+          "name": "ProblematicStatements",
+          "value": "true"
+        },
+        {
+          "name": "StructureEnhancements",
+          "value": "true"
+        },
+        {
+          "name": "OutdatedStatements",
+          "value": "false"
+        },
+        {
+          "name": "CrossProgramChecks",
+          "value": "false"
+        },
+        {
+          "name": "ProgrammingGuidelines",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "checkName": "CI_NAMING_NEW",
+      "parameters": [
+        {
+          "name": "PrefixElem",
+          "value": "[EV]"
+        },
+        {
+          "name": "PrefixGen",
+          "value": "[GV]"
+        },
+        {
+          "name": "PrefixRefBadi",
+          "value": "B"
+        },
+        {
+          "name": "PrefixRefCls",
+          "value": "O"
+        },
+        {
+          "name": "PrefixRefData",
+          "value": "R"
+        },
+        {
+          "name": "PrefixRefIntf",
+          "value": "I"
+        },
+        {
+          "name": "PrefixRefExp",
+          "value": "X"
+        },
+        {
+          "name": "PrefixStruct",
+          "value": "S"
+        },
+        {
+          "name": "PrefixTabAny",
+          "value": "T"
+        },
+        {
+          "name": "PrefixTabHash",
+          "value": "TH?"
+        },
+        {
+          "name": "PrefixTabIndex",
+          "value": "T"
+        },
+        {
+          "name": "PrefixTabStd",
+          "value": "T"
+        },
+        {
+          "name": "PrefixTabSort",
+          "value": "TS?"
+        },
+        {
+          "name": "WebDynp",
+          "value": "false"
+        },
+        {
+          "name": "Report"
+        },
+        {
+          "name": "FunctionGroup"
+        },
+        {
+          "name": "DataGlob",
+          "valueList": [
+            "(/.*/)?G[:type:]_"
+          ]
+        },
+        {
+          "name": "FieldSymbolGlob",
+          "valueList": [
+            "<G[:type:]_"
+          ]
+        },
+        {
+          "name": "ConstantGlob",
+          "valueList": [
+            "(/.*/)?GC[:type:]?_"
+          ]
+        },
+        {
+          "name": "TypeGlob"
+        },
+        {
+          "name": "SelectOption",
+          "valueList": [
+            "S_.."
+          ]
+        },
+        {
+          "name": "Parameter",
+          "valueList": [
+            "P_.."
+          ]
+        },
+        {
+          "name": "SelectionScreen"
+        },
+        {
+          "name": "FieldGroup"
+        },
+        {
+          "name": "Define"
+        },
+        {
+          "name": "DataLoc",
+          "valueList": [
+            "(/.*/)?L[:type:]_"
+          ]
+        },
+        {
+          "name": "Static",
+          "valueList": [
+            "(/.*/)?S[:type:]_"
+          ]
+        },
+        {
+          "name": "FieldSymbolLoc",
+          "valueList": [
+            "<(/.*/)?L[:type:]_"
+          ]
+        },
+        {
+          "name": "ConstantLoc",
+          "valueList": [
+            "(/.*/)?LC[:type:]?_"
+          ]
+        },
+        {
+          "name": "TypeLoc"
+        },
+        {
+          "name": "Function"
+        },
+        {
+          "name": "FunctionImporting",
+          "valueList": [
+            "I[:type:]_"
+          ]
+        },
+        {
+          "name": "FunctionExporting",
+          "valueList": [
+            "E[:type:]_"
+          ]
+        },
+        {
+          "name": "FunctionChanging",
+          "valueList": [
+            "C[:type:]_"
+          ]
+        },
+        {
+          "name": "FunctionTable",
+          "valueList": [
+            "T[:type:]_"
+          ]
+        },
+        {
+          "name": "Form"
+        },
+        {
+          "name": "FormUsing",
+          "valueList": [
+            "P[:type:]_"
+          ]
+        },
+        {
+          "name": "FormChanging",
+          "valueList": [
+            "C[:type:]_"
+          ]
+        },
+        {
+          "name": "FormTable",
+          "valueList": [
+            "T[:type:]_"
+          ]
+        },
+        {
+          "name": "ClassGlob",
+          "valueList": [
+            "(/.*/)?CL_",
+            "(/.*/)?CX_",
+            "(/.*/)?BP_",
+            "ZCL_",
+            "ZCX_"
+          ]
+        },
+        {
+          "name": "ClassLoc",
+          "valueList": [
+            "LTCL_",
+            "LCL_",
+            "LCX_",
+            "LHC_",
+            "LSC_"
+          ]
+        },
+        {
+          "name": "InterfaceGlob",
+          "valueList": [
+            "(/.*/)?IF_",
+            "ZIF_"
+          ]
+        },
+        {
+          "name": "InterfaceLoc",
+          "valueList": [
+            "LIF_"
+          ]
+        },
+        {
+          "name": "ClsData",
+          "valueList": [
+            "M[:type:]_"
+          ]
+        },
+        {
+          "name": "ClsClassData",
+          "valueList": [
+            "G[:type:]_"
+          ]
+        },
+        {
+          "name": "ClsConstant",
+          "valueList": [
+            "C[:type:]?_"
+          ]
+        },
+        {
+          "name": "ClsType"
+        },
+        {
+          "name": "IntfData",
+          "valueList": [
+            "M[:type:]_"
+          ]
+        },
+        {
+          "name": "IntfClassData",
+          "valueList": [
+            "G[:type:]_"
+          ]
+        },
+        {
+          "name": "IntfConstant",
+          "valueList": [
+            "C[:type:]?_"
+          ]
+        },
+        {
+          "name": "IntfType"
+        },
+        {
+          "name": "Method"
+        },
+        {
+          "name": "MethodImporting",
+          "valueList": [
+            "I[:type:]_"
+          ]
+        },
+        {
+          "name": "MethodExporting",
+          "valueList": [
+            "E[:type:]_"
+          ]
+        },
+        {
+          "name": "MethodChanging",
+          "valueList": [
+            "C[:type:]_"
+          ]
+        },
+        {
+          "name": "MethodReturning",
+          "valueList": [
+            "R[:type:]_"
+          ]
+        },
+        {
+          "name": "Event"
+        },
+        {
+          "name": "EventExporting",
+          "valueList": [
+            "I[:type:]_"
+          ]
+        }
+      ]
+    },
+    {
+      "checkName": "ABAP_UNIT",
+      "parameters": [
+        {
+          "name": "MaximumRiskLevel",
+          "value": "11"
+        },
+        {
+          "name": "MaximumRuntimeCategory",
+          "value": "12"
+        },
+        {
+          "name": "RuntimeRestriction",
+          "value": "2"
+        },
+        {
+          "name": "DurationLong",
+          "value": "3600"
+        },
+        {
+          "name": "DurationMedium",
+          "value": "300"
+        },
+        {
+          "name": "DurationShort",
+          "value": "60"
+        }
+      ]
+    }
+  ]
+}
