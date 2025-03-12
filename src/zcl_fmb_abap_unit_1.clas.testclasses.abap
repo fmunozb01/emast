@@ -12,6 +12,7 @@ CLASS ltcl_pedido_test DEFINITION FINAL FOR TESTING
       test_agregar_producto  FOR TESTING,
       test_eliminar_producto FOR TESTING,
       test_listar_productos  FOR TESTING.
+*      test_main              FOR TESTING.
 ENDCLASS.
 
 
@@ -52,5 +53,13 @@ CLASS ltcl_pedido_test IMPLEMENTATION.
     cl_abap_unit_assert=>assert_not_initial( lt_productos ).
   ENDMETHOD.
 
+
+*  METHOD test_main.
+**    DATA(lo_abap_unit) = NEW zcl_fmb_abap_unit_1(  ).
+**    DATA: lo_out TYPE REF TO if_oo_adt_classrun_out.
+**    cl_abap_unit_assert=>skip( msg = 'La prueba se salta' ).
+**    lo_abap_unit->if_oo_adt_classrun~main( out = lo_out ).
+*
+*  ENDMETHOD.
 
 ENDCLASS.

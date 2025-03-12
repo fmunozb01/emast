@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_ATRAV_FMB'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_ATRAV_FMB'
+  }
+}
+define service ZUI_ATRAV_FMB_O4 provider contracts odata_v4_ui {
+  expose ZC_ATRAV_FMB as Travel;
+}
